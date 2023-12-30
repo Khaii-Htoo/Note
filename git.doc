@@ -1,0 +1,19 @@
+git init
+git add .
+git status
+git commit -m 'first commit'
+git log --oneline
+git branch name
+git branch -a
+git checkout master
+git branch -b name
+git branch -D name
+git merge name
+git stash
+git stash --include-untracked
+git stash pop
+
+// git hub
+git push origin name
+git branch -D name
+git push origin --delete name 

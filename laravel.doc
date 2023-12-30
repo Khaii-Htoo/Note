@@ -1,0 +1,93 @@
+<!-- update unique validate -->
+$id = $this->route('user');
+_____________________________________________________________
+
+ <!-- add csrf token -->
+<meta name="csrf-token" content="{{ csrf_token() }}">
+
+let token = document.head.querySelector('meta[name="csrf-token"]')
+
+if (token) {
+    $.ajaxSetup({
+        headers: {
+            'X_CSRF-TOKEN': token.content
+        }
+    })
+}
+
+<!-- role and permission -->
+{{ implode(',',$u->roles->pluck('name')->toArray()) }}
+
+<!-- number of day in month -->
+$dayInMonth = Carbon::parse($startTime)->daysInMonth;
+
+<!-- date filter -->
+$workingDay = Carbon::parse($startTime)->diffInDaysFiltered(function(Carbon $date){
+    return $date->isWeekday();
+},Carbon::parse($endTime));
+
+<!-- multi image upload -->
+$imageUpload = [];
+foreach($request->file('image') as $image){
+    $imageFile = uniqid().$image->getClientOriginalName();
+    $image->storeAs('public',$imageFile);
+    $imageUpload[] = $imageFile;
+}
+$data['image']= $imageUpload;
+
+<!-- array store and pivot -->
+$project->teamMember()->sync($request->team_menber);
+
+<!-- try catch -->
+DB::beginTransaction();
+try {
+    DB::commit();
+    // all good
+} catch (\Exception $e) {
+    DB::rollback();
+    // something went wrong
+}
+<!-- create token -->
+$user->createToken(time())->plainTextToken
+
+<!-- eloquent search dataTable-->
+->filterColumn('employee',function($query,$keyword){
+    $query->whereHas('user',function($q1) use ($keyword){
+        $q1->where('name','like','%'.$keyword.'%');
+    });
+})
+
+<!-- str to time-->
+$year = [date('Y')];
+for ($i = 1; $i <= 5; $i++) {
+    $year[] = date('Y', strtotime("-$i month"));
+}
+
+<!-- date format-->
+public function getDateAttribute()
+{
+    $c = new Carbon($this->created_at);
+    return $c->diffForHumans();
+}
+
+<!-- multiple image upload -->
+protected $casts = [
+    'images' => 'array'
+];
+
+<!-- pivot filter -->
+$project = Project::with('leader','member')->whereHas('leader',function($query){
+    $query->where('user_id',Auth::user()->id);
+})->whereHas('member',function($query){
+    $query->where('user_id',Auth::user()->id);
+});
+
+<!-- global state -->
+view()->composer('*',function($view){
+   $count = Cart::('user_id',Auth::user()->id)->count();
+   view()->share(['cartCount'=>$count]);
+   $view->with([]);
+})
+
+
+

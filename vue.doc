@@ -1,0 +1,16 @@
+
+### star rating ###
+<!-- install -->
+npm i vue-star-rating
+<!-- show database data -->
+<star-rating :rating="r.rating"/>
+<!-- get change star -->
+  <star-rating @update:rating ="setRating"/>
+  const setRating = (rating) => {
+    rating.value = rating
+   }
+__________________________________________________________________________________________
+### vue computed sum ###
+return cart.value.reduce((acc, c) => {
+        return acc + (c.product.discount_price * c.total_qty);
+    }, 0);
