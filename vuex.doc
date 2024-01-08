@@ -1,0 +1,29 @@
+// @/store.js
+npm i -S vuex@next
+import { createStore } from 'vuex'
+
+export default createStore({
+  state: {
+    userData: "USER!"
+  },
+  mutations: {
+
+  },
+  actions: {
+
+  },
+  getters: {
+
+  }
+})
+
+import { createApp } from 'vue'
+import store from '@/store'
+
+const app = createApp(App)
+app.use(store)
+
+#############################################################
+
+ $store.state.sayHello 
+
