@@ -89,5 +89,13 @@ view()->composer('*',function($view){
    $view->with([]);
 })
 
+<!-- image append -->
+ protected $appends = ['imageURL'];
+
+    public function getImageUrlAttribute()
+    {
+        return asset('storage/' . $this->image);
+    }
+
 
 
