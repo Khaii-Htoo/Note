@@ -1,0 +1,7 @@
+Redux FLow
+-> action reducer
+-> reducer
+-> store
+-> actions
+-> actionCreators
+-> User

@@ -1,0 +1,22 @@
+#################### search ######################
+  const location = useLocation();
+  const params = new URLSearchParams(location.search);
+  const search = params.get("search");
+  useEffect(() => {
+    fetchData(`http://localhost:3000/books${search ? `/?q=${search}` : ""}`);
+  }, [search]);
+  const handleSearch = () => {
+    // ?search=one
+    navigate(`?search=${search}`);
+  };
+#################### dark mode ######################
+  const toggleTheme = () => {
+  const html = window.document.documentElement;
+  if (html.classList.contains("dark")) {
+    html.classList.remove("dark");
+    isDark.value = false;
+  } else {
+    html.classList.add("dark");
+    isDark.value = true;
+  }
+};

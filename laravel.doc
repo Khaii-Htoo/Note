@@ -97,5 +97,21 @@ view()->composer('*',function($view){
         return asset('storage/' . $this->image);
     }
 
+<!-- laravel sanctum custom auth -->
+public function login(Request $request)
+    {
+        $cre = $request->only('email', 'password');
+        if (Auth::attempt($cre)) {
+            $token = $request->user()->createToken($request->user()->name);
+            return response()->json(['token' => $token->plainTextToken]);
+        } else {
+            return 'Something Wrong!';
+        }
+    }
+
+
+
+    
+
 
 
