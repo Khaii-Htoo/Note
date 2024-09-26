@@ -9,8 +9,21 @@ npm i vue-star-rating
   const setRating = (rating) => {
     rating.value = rating
    }
-__________________________________________________________________________________________
+
+
 ### vue computed sum ###
 return cart.value.reduce((acc, c) => {
         return acc + (c.product.discount_price * c.total_qty);
     }, 0);
+
+
+
+//upload image
+const uploadImage = (e) => {
+  const reader = new FileReader()
+  reader.onload = () => {
+    const base64Str = reader.result
+    console.log(base64Str)
+  }
+  reader.readAsDataURL(e.target.files[0])
+}
