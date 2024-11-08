@@ -1,55 +1,7 @@
-//  image append 
- $('#image').on('change',function(){
-            let imgLength = document.getElementById('image').files.length
-            $('.previewImg').html('')
-            for(var i = 0;i < imgLength;i++){
-                $('.previewImg').append(`<img src="${URL.createObjectURL(event.target.files[i])}">`)
-            }
-           })
-__________________________________________________________________________________________          
-
-// multiselect delete
-<input class="form-check-input" type="checkbox" value=""
-                                                id="select_all_ids" />
-->addColumn('checkBox', function ($each) {
-                return '<input class="form-check-input checkbox_ids" name="ids" type="checkbox" value="' . $each->id . '" id="flexCheckDefault">';
-            })
-$('#select_all_ids').click(function() {
-                $('.checkbox_ids').prop('checked', $(this).prop('checked'))
-            })
-            $('.delete').click(function() {
-                Swal.fire({
-                    title: "Are you sure?",
-                    text: "You won't be able to revert this!",
-                    icon: "warning",
-                    showCancelButton: true,
-                    confirmButtonColor: "#d33",
-                    cancelButtonColor: "#3085d6",
-                    confirmButtonText: "Delete",
-                    reverseButtons: true,
-                }).then((result) => {
-                    if (result.isConfirmed) {
-                        var all_ids = []
-                        $('input:checkbox[name=ids]:checked').each(function() {
-                            all_ids.push($(this).val());
-                        })
-                        $.ajax({
-                            type: "POST",
-                            url: "deleteSelected",
-                            data: {
-                                ids: all_ids
-                            },
-                            success: function(res) {
-                                table.ajax.reload()
-
-                            }
-                        })
-                        Swal.fire({
-                            title: "Deleted!",
-                            text: "Your file has been deleted.",
-                            icon: "success"
-                        });
-                    }
-                });
-
-            })
+//////////Server Deploy
+ ssh ecs-user@47.236.166.97
+ eval $(ssh-agent -s)
+ ssh-add ~/Desktop/sourceserver2.pem
+ cd /home/projects/akblack/frontend/
+ Hongqi55!!@@
+ Hongqi6689!!@@
