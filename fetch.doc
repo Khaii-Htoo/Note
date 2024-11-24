@@ -1,7 +1,2 @@
-update method 
-fetch(this.api + this.post.id, {
-        method: "PATCH",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ complete: !this.post.complete }),
-      })
-
+// next js ionic starter kit
+https://github.com/UretzkyZvi/nextjs-typescript-tailwind-ionic-starter
