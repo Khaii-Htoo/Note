@@ -1,2 +1,3 @@
 // next js ionic starter kit
 https://github.com/UretzkyZvi/nextjs-typescript-tailwind-ionic-starter
+npm i next-auth@5.0.0-beta.16
