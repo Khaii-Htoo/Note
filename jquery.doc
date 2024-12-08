@@ -9,3 +9,34 @@
 
 /////////// node js
 nvm alias default 22
+
+
+prepare for interview
+
+////// higher order function
+
+A higher-order function in JavaScript is a function that either:
+Takes one or more functions as arguments, or
+Returns a function as a result.
+These functions allow more flexibility and dynamic behavior, commonly used in array methods like map(), filter(), and reduce().
+
+JavaScript တွင်  higher-order function အောက်ပါ လုပ်ဆောင်ချက် တစ်ခုဖြစ်သည်
+တစ်ခု သို့မဟုတ် တစ်ခုထက်ပိုသော လုပ်ဆောင်ချက်များကို အငြင်းအခုံများအဖြစ် ယူသည်။
+ရလဒ်အဖြစ် လုပ်ဆောင်ချက်တစ်ခုကို ပြန်ပေးသည်။
+ဤလုပ်ဆောင်ချက်များသည် map(), filter(), နှင့် reduce() ကဲ့သို့သော array နည်းလမ်းများတွင် အသုံးများသော ပျော့ပြောင်းမှုနှင့် သွက်လက်သောအပြုအမူများကို ခွင့်ပြုပေးပါသည်။
+
+/////// callback function
+
+A callback function in JavaScript is a function passed as an argument to another function,
+then invoked later within that function. It's a way to ensure that code runs only after another piece of code has completed.
+Key Facts:
+Purpose: Handle asynchronous tasks (e.g., API calls, timers) or allow custom behavior in reusable functions.
+Usage: You pass the callback to a function, and that function "calls back" when ready.
+Examples: Commonly used in setTimeout, event listeners, and array methods like map, filter, or forEach.
+
+JavaScript ရှိ callback function သည် အခြား function တစ်ခုသို့ argument တစ်ခုအဖြစ် ပေးပို့သည့် function တစ်ခုဖြစ်သည်။
+ထို့နောက် ထိုလုပ်ဆောင်ချက်အတွင်းတွင် နောက်ပိုင်းတွင် ထည့်သွင်းခဲ့သည်။ အခြားကုဒ်အပိုင်းတစ်ခုပြီးသည်နှင့်မှသာ ကုဒ်အလုပ်လုပ်ကြောင်း သေချာစေရန် နည်းလမ်းတစ်ခုဖြစ်သည်။
+အဓိကအချက်များ-
+ရည်ရွယ်ချက်- အညီအမျှ လုပ်ဆောင်စရာများကို ကိုင်တွယ်ပါ (ဥပမာ၊ API ခေါ်ဆိုမှုများ၊ အချိန်တိုင်းကိရိယာများ) သို့မဟုတ် ပြန်သုံးနိုင်သော လုပ်ဆောင်ချက်များတွင် စိတ်ကြိုက်အပြုအမူကို ခွင့်ပြုပါ။
+အသုံးပြုမှု- သင်သည် လုပ်ဆောင်ချက်တစ်ခုသို့ ပြန်လည်ခေါ်ဆိုမှုကို လွှဲပြောင်းပေးပြီး အဆင်သင့်ဖြစ်သည့်အခါ ၎င်းလုပ်ဆောင်ချက်သည် "ပြန်ခေါ်သည်" ဖြစ်သည်။
+ဥပမာများ- setTimeout၊ ပွဲနားထောင်သူများနှင့် map၊ filter သို့မဟုတ် forEach ကဲ့သို့သော Array နည်းလမ်းများတွင် အသုံးများသည်။
