@@ -13,6 +13,27 @@ nvm alias default 22
 
 prepare for interview
 
+//what is js
+JavaScript (JS) is a programming language primarily used to create interactive effects within web browsers.
+It allows developers to build dynamic, responsive websites by controlling the content, behavior, 
+and structure of a web page. JS can update content, validate forms, create animations, and more,
+all on the client-side (in the browser) or server-side (with technologies like Node.js).
+
+In short:
+
+Purpose: Make websites interactive and dynamic.
+Key feature: Runs in web browsers, often alongside HTML and CSS.
+Usage: Adding functionality like form validation, animations, interactive maps, etc.
+JavaScript is essential for modern web development.
+avaScript (JS) ဟာ ဝက်ဘ်ဆိုက်တွေမှာ အပြန်အလှန် အကျိုးဆောင်မှုတွေ ဖန်တီးဖို့အသုံးပြုတဲ့ Programming language တစ်ခုပါ။
+
+အဓိက လုပ်ဆောင်ချက်များ
+Interactivity: ဝက်ဘ်ပေ့ဂျ်တွင် ပေါင်းသင်းမှု၊ လှုပ်ရှားမှု (animation) နှင့် တုံ့ပြန်မှု (response) ဖန်တီးနိုင်ပါသည်။
+Client-side: JavaScript ကို ပင်ပန်းပြောင်းလဲသော အကြောင်းအရာများကို သုံးရန် browser အတွင်းတွင်သာ လုပ်ဆောင်သည်။
+Server-side: Node.js လို server-side မှာလည်း အသုံးပြုနိုင်ပါတယ်။
+တိုချင်သောအကြောင်းအရာ:
+JavaScript ဟာ ဝက်ဘ်ပလပ်ဖောင်းများတွင် interactive features ပေးရန် အသုံးပြုတဲ့ programming language တစ်ခုဖြစ်ပါတယ်။
+
 ////// higher order function
 
 A higher-order function in JavaScript is a function that either:
