@@ -35,6 +35,9 @@ particularly for single-page applications (SPAs). It allows developers to create
 efficiently manage the rendering and updating of the UI in response to changes in data, making 
 it very efficient for building dynamic and interactive web applications.
 
+React js က js library တစ်ခုဖစ်တယ် facebookကdevelopလုပ်တယ် အထူးသဖြင့်spaအတွက် react js က reusable component
+နဲ rendering and updating ui data change ဖိုထိရောက်manageလုပ်နိုင်တယ် dynamic နဲ့ interactive web appဖန်းတီးဖိုအတွက်ထိရောက်တယ်
+
 
 USE EFFECT
 useEffect in React is a hook that allows you to perform side effects (like data fetching, subscriptions, 
