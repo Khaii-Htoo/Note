@@ -27,3 +27,11 @@ app.use(store)
 
  $store.state.sayHello 
 
+
+================================React Js =====================================
+
+USE EFFECT
+useEffect in React is a hook that allows you to perform side effects (like data fetching, subscriptions, 
+or manual DOM manipulations) in function components. It runs after the component renders and can be 
+triggered on specific state or prop changes.
+
